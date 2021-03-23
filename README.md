@@ -1,8 +1,8 @@
-# Single Node CDP Data Center Cluster 
+# Single Node CDP PVC-Base Cluster 
 
-This script automatically sets up a CDP Data Center Trial cluster on the public cloud on a single VM with the services preconfigured in a template file.
+This script automatically sets up a CDP PVC-Base (aka CDP Data Center) Trial cluster on the public cloud on a single VM with the services preconfigured in a template file. It supports both clusters with or without kerberos.
 
-As this cluster is meant to be used for demos, experimenting, training, and workshops, it doesn't setup Kerberos and TLS.
+This cluster is meant to be used for demos, experimenting, training, and workshops so it is only one node and does not have TLS enabled.
 
 ## Instructions
 
@@ -16,7 +16,7 @@ Below are instructions for creating the cluster with or without CDSW service. CD
 - Create a Centos 7 VM with at least 16 vCPUs/ 64 GB RAM. Choose the plain vanilla Centos image, not a cloudera-centos image.
 - OS disk size: at least 100 GB.
 - Docker device disk: at least 200GB SSD disk.
-  - Node: you need a fast disk more than you need a large disk: aim for a disk with 3000 IOPS. This might mean choosing a 1TB disk.
+  - Note: you need a fast disk more than you need a large disk: aim for a disk with 3000 IOPS. This might mean choosing a 1TB disk.
 
 ### Provisioning Cluster with Trial parcels
 
